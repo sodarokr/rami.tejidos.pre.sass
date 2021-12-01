@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rami. Hecho a mano con amor</title>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="
+          navbar
+          sticky-top
+          navbar-expand-lg navbar-dark
+          my-bgcolor-gris-oscuro
+          p-3
+          mb-5
+        "
+      >
+        <div class="container-fluid d-flex justify-content-end">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+              <a class="nav-link" href="catalogo.html">Catálogo</a>
+
+              <a class="nav-link active p-2" href="pedido.html"
+                >Hacé tu pedido</a
+              >
+              <a class="nav-link" href="nuestrahistoria.html"
+                >Nuestra Historia</a
+              >
+              <a class="nav-link" href="politica.html"
+                >Política de Devolución</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- LOGO -->
+        <img
+          class="logo-main"
+          src="../public/img/logoMain.png"
+          alt="RamiTejidos"
+        />
+      </nav>
+    </header>
+    <main class="main-pedido mb-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            <h1>Hacénos tu pedido!</h1>
+
+            <form class="row g-3">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreusuario"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellidousuario"
+                  placeholder="Apellido"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="correousuario"
+                  placeholder="Correo Electrónico"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="telusuario"
+                  placeholder="Teléfono"
+                />
+              </div>
+
+              <div class="mb-3 d-flex">
+                <div class="col-md-10">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="amigurumis" selected>Amigurumis</option>
+                    <option value="trapillo">Trapillo</option>
+                    <option value="crochet">Crochet</option>
+                    <option value="indumentaria-bebe">Indumentaria Bebé</option>
+                    <option value="tejidos">Tejidos de Punto</option>
+                    <option value="montessori">Accesorios Montessori</option>
+                    <option value="apegos">Apegos</option>
+                    <option value="holders">Holders</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-check d-flex justify-content-center mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Necesito envío
+                </label>
+              </div>
+              <div class="mb-3 d-flex justify-content-center">
+                <button class="btn btn-primary" type="submit">
+                  Enviar Pedido
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <a href="https://web.whatsapp.com/" target="_blank"
+      ><img
+        class="whatsapp-floating"
+        src="../public/img/whatsapp.png"
+        alt="Iniciar chat en Whatsapp"
+    /></a>
+
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <h3 class="footer__div-titulo">CONTACTO</h3>
+            <ul class="contacto">
+              <li>ramitejidos@gmail.com</li>
+              <li>+5492615461993</li>
+            </ul>
+          </div>
+          <div class="col-md-4 d-flex flex-column align-items-center">
+            <h3 class="footer__div-titulo">NUESTRAS REDES</h3>
+            <div class="redes">
+              <img
+                class="footer-img"
+                src="../public/img/facebook.png"
+                alt="facebook"
+              />
+              <img
+                class="footer-img"
+                src="../public/img/instagram.png"
+                alt="instagram"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3 class="footer__div-titulo">NEWSLETTER</h3>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tu dirección de correo"
+                aria-label="Tu dirección de correo"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary"
+                type="button"
+                id="button-addon2"
+              >
+                Suscribirme
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- BOOTSTRAP -->
+    <script src="../js/bootstrap.js"></script>
+  </body>
+</html>
